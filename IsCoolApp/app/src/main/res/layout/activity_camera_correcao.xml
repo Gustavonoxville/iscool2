@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="easii.com.br.iscoolapp.main.CameraCorrecao">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.07"
+        android:text="Selecione apenas o Gabarito!"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <com.edmodo.cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mCropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:layout_weight="0.89"
+        custom:guidelines="onTouch" />
+
+
+    <Button
+        android:id="@+id/btCrop"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:onClick="cortaFoto"
+        android:text="Enviar Foto" />
+
+
+</LinearLayout>
+
+
+
